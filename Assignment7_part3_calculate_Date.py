@@ -10,6 +10,10 @@ class Date:
     def Is_Date_Valid(self):
         if 0<=self.month1<=12 and 0<=self.month2<=12 and 0<=self.day1<=30 and 0<=self.day2<=30:
             return True
+        elif 0<=self.month1<=12 and 0<=self.month2<=12 and 0<=self.day1<=31 and 0<=self.day2<=31:
+            return True
+        elif 0<=self.month1<=12 and 0<=self.month2<=12 and 0<=self.day1<=29 and 0<=self.day2<=29:
+            return True
         else:
             return False
     def Get_Month_Name(self):
